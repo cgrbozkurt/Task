@@ -5,6 +5,7 @@ export const howDoc=[
         webp:"/images/step1.webp",
         title:"Terapistinizle Eşleşin",
         text:"Hangi konuda terapi almak istediğinizi belirleyin. Başvuru nedenine özel olarak yardım edebilecek terapistlerimizin içinden , kendiniz için en uygun olanını ile eşleşin."
+        
     },
     {
         id:2,

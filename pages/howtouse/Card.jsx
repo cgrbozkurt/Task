@@ -13,7 +13,8 @@ const HowtoCard = ({ item, onClick, isActive }) => {
         isActive ? "!bg-howtoactive " : ""
       } `}
     >
-      <Image src={item.img} width={32} height={32} className={`${isActive ? "text-howtoh1": ""}`} />
+      <Image src={item?.img || item.current} width={32} height={32} className={`text-[5rem]  ${isActive ? "fill-howtoh1": ""}`} />
+      
       <div className="htcard ">
         <h1 className={`flex text-start text-[1.5rem] ${isActive ? "text-howtoh1": ""}`}>{item.title}</h1>
         <p className="flex justify-start text-start">{item.text}</p>
