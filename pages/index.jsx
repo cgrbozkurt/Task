@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Home from "./homea";
+import Howtouse from "./howtouse";
 
 export default function Index() {
     

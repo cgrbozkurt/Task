@@ -3,8 +3,8 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="top-5  z-50  sticky  ">
-      <div className=" flex  justify-between mx-[20px]  h-[108px] bg-white rounded-[3.10rem]   px-[2.8rem] ">
-        <div className="hl flex  text-primary justify-between items-center gap-[60px]">
+      <div className=" flex  justify-between m-[20px] w-[1479px]  h-[107px] bg-white rounded-[3.10rem] transition-all  px-[2.8rem] ">
+        <div className="hl flex  text-primary justify-between items-center  gap-[60px]">
           <Link href="/" className="items-center text-[1.25rem]">
             <svg
               className="text-[1.25rem]"
@@ -83,7 +83,7 @@ const Header = () => {
             </svg>
           </Link>
           <div className="list ">
-            <ul className="flex text-[1rem]  font-medium shadow-sm pt-2   gap-4 font-sans  ">
+            <ul className="flex text-[1rem]  font-medium shadow-sm pt-2 ml-1  gap-[10px] font-sans  ">
               <Link href="/howtouse">NASIL ÇALIŞIR</Link>
               <Link href="/about">HAKKIMIZDA</Link>
               <Link href="/therapists">PSİKOLOGLARIMIZ</Link>
@@ -99,7 +99,7 @@ const Header = () => {
         </div>
         <div className="hr flex gap-2 items-center">
           <button className=" flex justify-center items-center border-[1px] border-black  h-[51px] w-[94px] rounded-xl ">
-            <svg
+             <svg
               width="18"
               height="18"
               viewBox="0 0 22 22"

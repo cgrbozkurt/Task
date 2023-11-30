@@ -11,27 +11,30 @@ module.exports = {
         "bgpurple":"#ABAAF3",
         "primary":"rgb(50,36,96)",
         "secondary":"rgb(86, 54, 190)",
-        "howis":"#fafbfe"
-      }
-    },
-    container:{
-      screens:{
-        xs: "375px",
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1140px",
-        "2xl":"1140px",
-  
+        "howis":"#fafbfe",
+        "howtoh1":"#6D42EF",
+        "howtopas":"#f9fbfe"
       },
       fontFamily:{
-        brandon:['Open Sans ' , "sans-serif"]
+        brandon:['Inter', "sans-serif"]
       },
-      fontWeight:{
-        mm:"400"
-      }
+      container:{
+        screens:{
+          xs: "375px",
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1140px",
+          "2xl":"1140px",
+    
+        }
+    }
+ 
+      
+  
+      
    
   },
 
-  plugins: [],
+  plugins: []
 }}
