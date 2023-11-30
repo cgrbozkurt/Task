@@ -13,7 +13,10 @@ module.exports = {
         "secondary":"rgb(86, 54, 190)",
         "howis":"#fafbfe",
         "howtoh1":"#6D42EF",
-        "howtopas":"#f9fbfe"
+        "howtopas":"#f9fbfe",
+        "howtoactive":"#efecfd",
+        "about":"#4344e5",
+        "orangeabout":"#fe7163"
       },
       fontFamily:{
         brandon:['Inter', "sans-serif"]

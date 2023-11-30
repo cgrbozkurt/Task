@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Home from "./homea";
 import Howtouse from "./howtouse";
+import About from "./about";
 
 export default function Index() {
     
@@ -12,6 +13,7 @@ export default function Index() {
      
       </Head>
       <Home/>
+      <About/>
       
     </div>
   );
