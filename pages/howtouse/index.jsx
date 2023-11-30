@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { howDoc } from "./howdocument";
+import { howDoc } from "../api/howdocument";
 import HowtoCard from "./Card";
 import Image from "next/image";
 
