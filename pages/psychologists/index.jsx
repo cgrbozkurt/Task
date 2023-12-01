@@ -1,11 +1,20 @@
 import React from 'react'
 import JobsCard from './jobscard'
+import psychologists from '../api/jobs/psychologists'
+
+
 
 const Psychologists = () => {
   return (
-    <div>
-        <JobsCard/>
-    </div>
+    <section className='flex  flex-col items-center h-screen w-screen'>
+      <div className=''>asdf</div>
+      <div className='flex gap-5 items-center w-[1200px] h-[557px]  overflow-x-scroll overflow-x-auto '>
+      {psychologists.map((item)=>
+        <JobsCard item={item} />
+        )}
+      </div>
+      <div className=''>asdfasdf</div>
+    </section>
   )
 }
 
