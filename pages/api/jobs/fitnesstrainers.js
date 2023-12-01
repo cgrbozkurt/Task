@@ -1,5 +1,6 @@
 export const fitnessTrainers = [
     {
+      joblink:"fitness",
       id: 1,
       name: 'Yavuz İhsan Kılıç',
       namelink: 'yavuz-ihsan-kilic',
@@ -20,6 +21,8 @@ export const fitnessTrainers = [
       minSessionAmount: 245,
     },
     {
+      joblink:"fitness",
+
       id: 2,
       name: 'Buse Vardarol',
       namelink: 'buse-vardarol',
@@ -37,6 +40,8 @@ export const fitnessTrainers = [
       minSessionAmount: 245,
     },
     {
+      joblink:"fitness",
+
       id: 3,
       name: 'İrfan Yüncü',
       namelink: 'irfan-yuncu',
@@ -56,6 +61,8 @@ export const fitnessTrainers = [
       minSessionAmount: 245,
     },
     {
+      joblink:"fitness",
+
       id: 4,
       name: 'Mert Öztürk',
       namelink: 'mert-ozturk',
@@ -75,6 +82,8 @@ export const fitnessTrainers = [
       minSessionAmount: 245,
     },
     {
+      joblink:"fitness",
+
       id: 5,
       name: 'Berkant Bayazıt',
       namelink: 'berkant-bayazit',

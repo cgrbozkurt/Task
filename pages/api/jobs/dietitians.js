@@ -1,5 +1,6 @@
 export const dietitians = [
     {
+      joblink:"diyetisyen",
       id: 1,
       name: 'Başak Suna Albayrak',
       namelink: 'basak-suna-albayrak',
@@ -20,6 +21,8 @@ export const dietitians = [
       minSessionAmount: 395,
     },
     {
+      joblink:"diyetisyen",
+
       id: 2,
       name: 'Sosin Yakacı',
       namelink: 'sosin-yakaci',
@@ -40,6 +43,8 @@ export const dietitians = [
       minSessionAmount: 270,
     },
     {
+      joblink:"diyetisyen",
+
       id: 3,
       name: 'Tunahan Berber',
       namelink: 'tunahan-berber',
@@ -59,6 +64,8 @@ export const dietitians = [
       minSessionAmount: 395,
     },
     {
+      joblink:"diyetisyen",
+
       id: 4,
       name: 'Güldane Coşkun',
       namelink: 'guldane-coskun',
@@ -79,6 +86,8 @@ export const dietitians = [
       minSessionAmount: 270,
     },
     {
+      joblink:"diyetisyen",
+
       id: 5,
       name: 'Melike Özkan',
       namelink: 'melike-ozkan',
@@ -99,6 +108,8 @@ export const dietitians = [
       minSessionAmount: 270,
     },
     {
+      joblink:"diyetisyen",
+
       id: 6,
       name: 'Nurseda Seyhan',
       namelink: 'nurseda-seyhan',
@@ -119,6 +130,8 @@ export const dietitians = [
       minSessionAmount: 270,
     },
     {
+      joblink:"diyetisyen",
+
       id: 7,
       name: 'Sabiha Ece Butakın',
       namelink: 'sabiha-ece-butakin',
@@ -139,6 +152,8 @@ export const dietitians = [
       minSessionAmount: 270,
     },
     {
+      joblink:"diyetisyen",
+
       id: 8,
       name: 'Büşra Boyalı Özbey',
       namelink: 'busra-boyalı-ozbey',
@@ -159,6 +174,8 @@ export const dietitians = [
       minSessionAmount: 270,
     },
     {
+      joblink:"diyetisyen",
+
       id: 9,
       name: 'Melis Büyükgebiz',
       namelink: 'melis-buyukgebiz',
@@ -179,6 +196,8 @@ export const dietitians = [
       minSessionAmount: 270,
     },
     {
+      joblink:"diyetisyen",
+
       id: 10,
       name: 'Betül Şahin Yılmaz',
       namelink: 'betul-sahin-yilmaz',

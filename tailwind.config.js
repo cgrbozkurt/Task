@@ -17,11 +17,15 @@ module.exports = {
         "howtoactive":"#efecfd",
         "about":"#4344e5",
         "orangeabout":"#fe7163",
-        "jobsborder":"#52b69a",
-        "ajobbg":"#eef8f5"
+        "jobsborder":"#34a0a4",
+        "ajobbg":"#eef8f5",
+        "jobtext":"#575757",
+        "spescardbg":"#e6e4e4"
+
       },
       fontFamily:{
-        brandon:['Inter', "sans-serif"]
+        brandon:['Inter', "sans-serif"],
+        lato:["Lato", "sans-serif"]
       },
       container:{
         screens:{

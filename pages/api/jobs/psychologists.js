@@ -1,5 +1,7 @@
 export const  psychologists= [
     {
+      joblink:"psikolog",
+      url:"https://i.pravatar.cc/300",
         id: 1,
         name: 'Gül Çolak',
         namelink: 'gul-colak',
@@ -20,6 +22,10 @@ export const  psychologists= [
         minSessionAmount: 320,
       },
       {
+      joblink:"psikolog",
+
+      url:"https://i.pravatar.cc/300",
+
         id: 2,
         name: 'Hamza Say',
         namelink: 'hamza-say',
@@ -40,6 +46,10 @@ export const  psychologists= [
         minSessionAmount: 320,
       },
       {
+      joblink:"psikolog",
+
+      url:"https://i.pravatar.cc/300",
+
         id: 3,
         name: 'Çağla Demirel',
         namelink: 'cagla-demirel',
@@ -60,6 +70,10 @@ export const  psychologists= [
         minSessionAmount: 370,
       },
       {
+      joblink:"psikolog",
+
+      url:"https://i.pravatar.cc/300",
+
         id: 4,
         name: 'Nur Destioğlu',
         namelink: 'nur-destioglu',
@@ -80,6 +94,10 @@ export const  psychologists= [
         minSessionAmount: 320,
       },
       {
+      joblink:"psikolog",
+
+      url:"https://i.pravatar.cc/300",
+
         id: 5,
         name: 'Nilüfer Şişman',
         namelink: 'nilufer-sisman',
@@ -97,6 +115,10 @@ export const  psychologists= [
         minSessionAmount: 370,
       },
       {
+      joblink:"psikolog",
+
+      url:"https://i.pravatar.cc/300",
+
         id: 6,
         name: 'Mert Berber',
         namelink: 'mert-berber',
@@ -117,6 +139,10 @@ export const  psychologists= [
         minSessionAmount: 320,
       },
       {
+      joblink:"psikolog",
+
+      url:"https://i.pravatar.cc/300",
+
         id: 7,
         name: 'Tuba Ulusan',
         namelink: 'tuba-ulusan',
@@ -137,6 +163,10 @@ export const  psychologists= [
         minSessionAmount: 420,
       },
       {
+      joblink:"psikolog",
+
+      url:"https://i.pravatar.cc/300",
+
         id: 8,
         name: 'Çağan Yüksel',
         namelink: 'cagan-yuksel',

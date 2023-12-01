@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="top-5  z-50  sticky   ">
-      <div className=" flex  justify-between m-[20px] w-[1479px]  h-[107px] bg-white rounded-[3.10rem] transition-all opacity-5   px-[2.8rem] ">
+    <div className="top-5     ">
+      <div className=" flex  justify-between m-[20px] w-full  h-[107px] bg-white rounded-[3.10rem] transition-all mx-auto  px-[2.8rem] ">
         <div className="hl flex  text-primary justify-between items-center  gap-[60px]">
           <Link href="/" className="items-center text-[1.25rem]">
             <svg

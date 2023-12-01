@@ -1,0 +1,29 @@
+export const jobsimg=[
+    {
+        url:"/images/phs1.png"
+    },
+    {
+        url:"/images/phs2.png"
+    },
+    {
+        url:"/images/phs3.png"
+    },
+    {
+        url:"/images/phs4.png"
+    },
+    {
+        url:"/images/phs5.png"
+    },
+    {
+        url:"/images/phs6.png"
+    },
+    {
+        url:"/images/phs7.png"
+    },
+    {
+        url:"/images/phs8.png"
+    },
+    {
+        url:"/images/phs9.png"
+    },
+]
