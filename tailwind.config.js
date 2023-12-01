@@ -16,7 +16,9 @@ module.exports = {
         "howtopas":"#f9fbfe",
         "howtoactive":"#efecfd",
         "about":"#4344e5",
-        "orangeabout":"#fe7163"
+        "orangeabout":"#fe7163",
+        "jobsborder":"#52b69a",
+        "ajobbg":"#eef8f5"
       },
       fontFamily:{
         brandon:['Inter', "sans-serif"]

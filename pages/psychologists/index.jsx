@@ -1,8 +1,11 @@
 import React from 'react'
+import JobsCard from './jobscard'
 
 const Psychologists = () => {
   return (
-    <div>Psychologists</div>
+    <div>
+        <JobsCard/>
+    </div>
   )
 }
 

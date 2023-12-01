@@ -3,6 +3,7 @@ import Home from "./homea";
 import Howtouse from "./howtouse";
 import About from "./about";
 import GetSupport from "./getsupport";
+import Psychologists from "./psychologists";
 
 export default function Index() {
     
@@ -16,6 +17,7 @@ export default function Index() {
       <Home/>
       <About/>
       <GetSupport/>
+      <Psychologists/>
       
     </div>
   );
