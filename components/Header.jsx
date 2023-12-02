@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlArrowDown } from "react-icons/sl";
 
 const Header = () => {
   return (
@@ -98,7 +99,7 @@ const Header = () => {
           </div>
         </div>
         <div className="hr flex gap-2 items-center">
-          <button className=" flex justify-center items-center border-[1px] border-black  h-[51px] w-[94px] rounded-xl ">
+          <button className=" flex  gap-2 justify-center items-center border-[1px] border-black  h-[51px] w-[94px] rounded-xl ">
              <svg
               width="18"
               height="18"
@@ -138,6 +139,8 @@ const Header = () => {
               ></path>
             </svg>
             <span>TR</span>
+            <SlArrowDown />
+
 
           </button>
           <button className=" bg-bgpurple text-2xl h-[51px] w-[126px] rounded-[20px] ">Giriş Yap</button>

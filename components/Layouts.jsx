@@ -23,7 +23,6 @@ const Layouts = ({ children }) => {
     <div className="layout-container h-screen overflow-y-scroll">
       <Header />
       <main> {children}</main>
-      <Footer />
     </div>
   );
 };

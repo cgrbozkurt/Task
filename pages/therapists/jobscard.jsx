@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import SpecialitisCard from "./SpecialitisCard";
-import { jobsimg } from "../api/jobs/jobsimg";
+import { jobsimg } from "../api/jobs/jobsimage";
 import StarIcon from "./StarIcon";
 
 const JobsCard = ({ item, image }) => {

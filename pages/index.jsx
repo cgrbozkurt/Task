@@ -3,7 +3,9 @@ import Home from "./homea";
 import Howtouse from "./howtouse";
 import About from "./about";
 import GetSupport from "./getsupport";
-import Psychologists from "./psychologists";
+import Psychologists from "./therapists";
+import Sss from "./faq";
+import Footer from "@/components/Footer";
 
 export default function Index() {
     
@@ -18,6 +20,9 @@ export default function Index() {
       <About/>
       <GetSupport/>
       <Psychologists/>
+      <Sss/>
+      <Footer />
+
       
     </div>
   );

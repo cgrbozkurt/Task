@@ -69,4 +69,7 @@ class="h-5 w-5 text-secondary-500"
         </div>
     )
 }
+
+
+
 export default StarIcon

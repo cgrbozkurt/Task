@@ -20,7 +20,10 @@ module.exports = {
         "jobsborder":"#34a0a4",
         "ajobbg":"#eef8f5",
         "jobtext":"#575757",
-        "spescardbg":"#e6e4e4"
+        "spescardbg":"#e6e4e4",
+        "faqbtn":"#1a9d99",
+        "faqbg":"#edf8f4"
+        
 
       },
       fontFamily:{
