@@ -11,6 +11,7 @@ const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [openMenu,setOpenMenu]=useState(false);
 
+  console.log(openMenu)
   useEffect(() => {
     const handleScroll = () => {
       // Update the scroll position state
@@ -28,7 +29,7 @@ const Header = () => {
 
   return (
     <div
-      className={`${scrollPosition === 0 ? "" : "  "}top-0  fixed  lg:w-full w-full  `}
+      className={`${scrollPosition === 0 ? "" : "  "}top-0  fixed  lg:w-full w-full   `}
     >
       <div
         className={`${ scrollPosition === 0   ? "rounded-3xl p-10 "
@@ -36,7 +37,7 @@ const Header = () => {
         } ${openMenu?"bg-white h-[580px] w-full flex flex-col ":""} text-primary p-8   bg-bgpurple 
        transition-all flex items-center duration-700    lg:mx-auto `}
       >
-        <div className="headerleft pe-10   text-primary lg:w-auto w-full flex  justify-between  ">
+        <div className="headerleft pe-10   text-primary lg:w-auto w-full flex justify-between  ">
           <Link href="/" className="items-center text-[1.25rem]">
             {svg[0].terappin}
           </Link>
@@ -47,11 +48,11 @@ const Header = () => {
         
           
         
-        <div className={`headerright hidden lg:flex  justify-between w-full gap-2 items-center
-        ${openMenu?"flex flex-col":"hidden"}
+        <div className={`headerright hidden lg:flex  justify-between w-full lg:gap-2 gap-8 items-center
+        ${openMenu?"!flex flex-col lg:flex-row  ":""}
         `}        >
-          <div className="list ">
-            <ul className="flex text-[1rem]  font-medium shadow-sm pt-2 ml-1  gap-[10px] font-sans  ">
+          <div className="list  ">
+            <ul className="flex flex-col lg:flex-row text-[1rem] items-center  font-medium shadow-sm pt-2 ml-1  gap-[10px] font-sans  ">
               <Link href="/howtouse">NASIL ÇALIŞIR</Link>
               <Link href="/about">HAKKIMIZDA</Link>
               <Link href="/therapists">PSİKOLOGLARIMIZ</Link>
@@ -64,7 +65,7 @@ const Header = () => {
               </Link>
             </ul>
           </div>
-          <div className="login flex gap-5 justify-between">
+          <div className="login flex flex-col lg:flex-row gap-5 justify-between items-center">
             <button className=" flex  gap-2 justify-center items-center border-[1px] border-black  h-[51px] w-[94px] rounded-xl ">
               {svg[1].item}
               <span>TR</span>

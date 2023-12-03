@@ -21,14 +21,16 @@ const Index = () => {
             <p className="font-bold text-xl  pb-3">
               Hemen sana en uygun online psikolog ile eşleş ve değişime başla
             </p>
-            
-              <Link className="text-white flex items-center justify-center bg-primary w-44 h-12  rounded-2xl text-2xl" href="#">
+            <Image className="flex lg:hidden" src="/images/slider.webp" alt="slider" width={443} height={463} />
+             <div className="w-full lg:w-44 flex items-center justify-center">
+             <Link className="text-white flex items-center justify-center bg-primary w-44 h-12  rounded-2xl text-2xl" href="#">
                 Hemen Başla
               </Link>
+             </div>
             
           </div>
           
-          <div className="home-rihgt">
+          <div className="home-rihgt hidden lg:flex">
             <Image src="/images/slider.webp" alt="slider" width={443} height={463} />
           </div>
         </div>
