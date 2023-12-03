@@ -11,10 +11,10 @@ import Sss from "../faq";
 const Index = () => {
   return (
     
-      <>
-      <React.Fragment >
-        <div className="bg-bgpurple  top-0 h-screen w-full flex justify-around px-64 items-center ">
-          <div className="home-left text-primary w-96 ">
+      <div className="w-full">
+      
+        <div className="bg-bgpurple w-full  h-screen flex justify-around lg:px-64 items-center  lg:mt-0  mt-10">
+          <div className="home-left text-primary lg:w-[24rem] ">
             <h1 className="font-bold text-5xl pb-5">
               Online terapi ile değişimi başlat!
             </h1>
@@ -34,13 +34,13 @@ const Index = () => {
             <Image src="/images/slider.webp" alt="slider" width={443} height={463} />
           </div>
         </div>
-      </React.Fragment>
+      
       <Howtouse/>
       <About/>
       <GetSupport/>
       <Psychologists/>
       <Sss/>
-</>
+</div>
     
   );
 };

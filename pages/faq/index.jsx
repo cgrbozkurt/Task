@@ -12,8 +12,8 @@ const Sss = () => {
   };
 
   return (
-    <div className=" w-[screen] bg-faqbg  sm:h-screen ">
-      <div className="sm:mx-[209px] mx-12 items-center sm:items-start pt-20 flex flex-col  gap-10   sm:flex-row  ">
+    <div className=" w-[screen] bg-faqbg  xl:h-screen ">
+      <div className="lg:mx-[209px] mx-12 items-center sm:items-start lg:pt-20 pt-5 flex flex-col  gap-10   sm:flex-row  ">
         <div className="faq-left sm:w-[35%] w-full flex">
           <div className="sm:w-[270px] w-full  flex flex-col items-center sm:items-start">
             <h3 className="text-[28px]  w-full sm:text-start text-center font-semibold sm:tracking-wide ">

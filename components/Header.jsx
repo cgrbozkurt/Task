@@ -29,12 +29,13 @@ const Header = () => {
 
   return (
     <div
-      className={`${scrollPosition === 0 ? "" : "  "}top-0  fixed  lg:w-full w-full   `}
+      className={`${scrollPosition === 0 ? "" : " px-5  "} top-0 transition-all duration-700 fixed
+        bg-bgpurple   w-full ${openMenu===true?"p-5":""}   `}
     >
       <div
-        className={`${ scrollPosition === 0   ? "rounded-3xl p-10 "
-            : "bg-white transition-all duration-400 mt-5  rounded-[5.21rem]  "
-        } ${openMenu?"bg-white h-[580px] w-full flex flex-col ":""} text-primary p-8   bg-bgpurple 
+        className={`${ scrollPosition === 0   ? "rounded-3xl p-10  "
+            : "bg-white transition-all duration-400 mt-5   rounded-[5.21rem]  "
+        } ${openMenu?"bg-white h-[580px] w-full flex  flex-col ":""} text-primary lg:p-8 p-4   bg-bgpurple 
        transition-all flex items-center duration-700    lg:mx-auto `}
       >
         <div className="headerleft pe-10   text-primary lg:w-auto w-full flex justify-between  ">
@@ -71,7 +72,7 @@ const Header = () => {
               <span>TR</span>
               <SlArrowDown />
             </button>
-            <button className="  text-2xl h-[51px] w-[126px] rounded-[20px] ">
+            <button className=" bg-bgpurple text-2xl h-[51px] w-[126px] rounded-[20px] ">
               Giriş Yap
             </button>
             <button className="text-white bg-secondary h-[51px] w-[176px] rounded-[20px] font-semibold">

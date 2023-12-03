@@ -34,7 +34,7 @@ const Psychologists = () => {
   };
 
   return (
-    <section className="flex flex-col items-center h-screen w-screen">
+    <section className="flex flex-col lg:p-0 p-12 items-center h-screen w-screen">
       <div className=" ">
         <h1 className="font-bold text-3xl text-jobtext  flex text-center pb-5 -mt-12 font-lato">
           İhtiyacına En Uygun Uzmanı Seç
@@ -70,7 +70,7 @@ const Psychologists = () => {
           </button>
         </div>
       </div>
-      <div className="flex gap-5 items-center text-jobtext font-lato w-[1200px] h-[557px] overflow-x-hidden relative">
+      <div className="flex gap-5 items-center text-jobtext font-lato lg:w-[1200px] lg:h-[557px] w-full h-full overflow-x-hidden relative">
         <div
           className="flex items-center"
           style={{ transform: `translateX(${scrollPosition}px)` }}
