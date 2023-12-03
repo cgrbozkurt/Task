@@ -1,9 +1,9 @@
 import { setConfig } from "next/config";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { SlArrowDown } from "react-icons/sl";
 import { LuMenu } from "react-icons/lu";
 import { svg } from "./svg";
+import LanguageButton from "./LanguageButton";
 
 
 
@@ -29,32 +29,32 @@ const Header = () => {
 
   return (
     <div
-      className={`${scrollPosition === 0 ? "" : " px-5  "} top-0 transition-all duration-700 fixed
-        bg-bgpurple   w-full ${openMenu===true?"p-5":""}   `}
+      className={`${scrollPosition === 0 ? "" : " px-5   "} top-0 transition-all  duration-700 fixed  z-50 w-full
+          ${openMenu===true?"p-5":""}   `}
     >
       <div
         className={`${ scrollPosition === 0   ? "rounded-3xl p-10  "
             : "bg-white transition-all duration-400 mt-5   rounded-[5.21rem]  "
-        } ${openMenu?"bg-white h-[580px] w-full flex  flex-col ":""} text-primary lg:p-8 p-4   bg-bgpurple 
+        } ${openMenu?"bg-white h-[580px] w-full flex  flex-col ":""} text-primary lg:p-8 p-4 lg:h-[152]  gap-5
        transition-all flex items-center duration-700    lg:mx-auto `}
       >
-        <div className="headerleft pe-10   text-primary lg:w-auto w-full flex justify-between  ">
+        <div className="headerleft   text-primary lg:w-auto w-full flex justify-between  ">
           <Link href="/" className="items-center text-[1.25rem]">
             {svg[0].terappin}
           </Link>
-          <button onClick={()=>setOpenMenu(!openMenu)} className="lg:hidden block ">
-            <LuMenu />
+          <button onClick={()=>setOpenMenu(!openMenu)} className="lg:hidden block cursor-pointer ">
+            <LuMenu className="w-7 h-7" />
           </button >
         </div>
         
           
         
-        <div className={`headerright hidden lg:flex  justify-between w-full lg:gap-2 gap-8 items-center
+        <div className={`headerright hidden lg:flex  justify-between w-full lg:gap-0 gap-8 items-center
         ${openMenu?"!flex flex-col lg:flex-row  ":""}
         `}        >
           <div className="list  ">
-            <ul className="flex flex-col lg:flex-row text-[1rem] items-center  font-medium shadow-sm pt-2 ml-1  gap-[10px] font-sans  ">
-              <Link href="/howtouse">NASIL ÇALIŞIR</Link>
+            <ul className="flex flex-col lg:flex-row text-[1rem] items-center  font-medium shadow-sm pt-2   gap-[10px] font-sans  ">
+              <Link className="" href="/howtouse">NASIL ÇALIŞIR</Link>
               <Link href="/about">HAKKIMIZDA</Link>
               <Link href="/therapists">PSİKOLOGLARIMIZ</Link>
               <Link href="/faq">S.S.S.</Link>
@@ -66,12 +66,8 @@ const Header = () => {
               </Link>
             </ul>
           </div>
-          <div className="login flex flex-col lg:flex-row gap-5 justify-between items-center">
-            <button className=" flex  gap-2 justify-center items-center border-[1px] border-black  h-[51px] w-[94px] rounded-xl ">
-              {svg[1].item}
-              <span>TR</span>
-              <SlArrowDown />
-            </button>
+          <div className="login flex flex-col lg:flex-row gap-2 relative justify-between items-center">
+            <LanguageButton/>
             <button className=" bg-bgpurple text-2xl h-[51px] w-[126px] rounded-[20px] ">
               Giriş Yap
             </button>

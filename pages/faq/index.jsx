@@ -12,7 +12,7 @@ const Sss = () => {
   };
 
   return (
-    <div className=" w-[screen] bg-faqbg  xl:h-screen ">
+    <div className=" w-[screen] bg-faqbg  xl:h-screen lg:pt-20 ">
       <div className="lg:mx-[209px] mx-12 items-center sm:items-start lg:pt-20 pt-5 flex flex-col  gap-10   sm:flex-row  ">
         <div className="faq-left sm:w-[35%] w-full flex">
           <div className="sm:w-[270px] w-full  flex flex-col items-center sm:items-start">
@@ -22,12 +22,15 @@ const Sss = () => {
             <p className="text-[15px] my-[30px] sm:text-start text-center tracking-wide">
               BulutKlinik Hakkında sık sorulan sorular
             </p>
-            <button
-              className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px] rounded-2xl  hidden sm:block "
-              href={"https://bulutklinik.com/support"}
+            <div className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px] rounded-2xl lg:flex lg:justify-center items-center font-bold  text-white hidden sm:block ">
+            <Link
+              
+              href="https://bulutklinik.com/support"
             >
               Tümünü Gör
-            </button>
+            </Link>
+            </div>
+           
           </div>
         </div>
         <div className="item-contain flex -mt-4 w-full sm:w-[65%]">
@@ -43,12 +46,10 @@ const Sss = () => {
           </div>
           
         </div>
-        <button
-              className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px] rounded-2xl  sm:hidden block "
-              href={"https://bulutklinik.com/support"}
-            >
+        <Link href={"https://bulutklinik.com/support"}
+              className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px] rounded-2xl  sm:hidden block " >
               Tümünü Gör
-            </button>
+            </Link>
         
       </div>
     </div>

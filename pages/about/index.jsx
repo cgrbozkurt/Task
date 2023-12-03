@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section className=" lg:h-[1215px] w-screen bg-about  lg:px-24 pb-5 ">
+    <section className=" lg:h-[1215px] w-screen bg-about  lg:px-24 pb-5 lg:pt-20 ">
       <div className="about-top w-full flex flex-col  justify-between lg:pt-16 gap-2 text-white items-center">
         <h4 className="text-[20px] w-full lg:justify-center lg:flex hidden font-bold leading-6 ">
           BIZIM HAKKIMIZDA BIRAZ

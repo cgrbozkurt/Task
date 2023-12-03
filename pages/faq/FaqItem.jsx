@@ -14,7 +14,7 @@ const FaqItem = ({ item, active, click }) => {
      
       <div
         className={`w-full h-[55px] mt-7 ${
-          !active ? "" : "!lg:h-40 !h-[27rem] transition-all duration-1000"
+          !active ? "" : "!lg:h-40 !h-[230px] lg:pb-5 pb-0 transition-all duration-1000"
         }  transition-all duration-300`}
       >
         <h1 className="pb-[30px] flex justify-between font-bold tracking-wide  ">{item.title}  <div

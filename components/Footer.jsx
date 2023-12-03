@@ -1,10 +1,15 @@
+import Link from 'next/link'
 import React from 'react'
+import FooterItem from './FooterItem'
 
 const Footer = () => {
   return (
-<div className="footer bg-blue-900  w-full bottom-0 relative text-white " >
-asdasfdasfd 
-</div>  )
+    <div className='footer-contaimer bg-primary p-10  text-white'>
+     
+  <FooterItem />
+      
+    </div>
+  )
 }
 
 export default Footer

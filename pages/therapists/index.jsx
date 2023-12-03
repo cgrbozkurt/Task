@@ -28,13 +28,13 @@ const Psychologists = () => {
     const amount = 200;
     const newPosition =
       data === "right"
-        ? Math.min(scrollPosition + amount, 100)
-        : Math.max(scrollPosition - amount, -1200); 
+        ? Math.min(scrollPosition + amount, 0)
+        : Math.max(scrollPosition - amount, -1100); 
     setScrollPosition(newPosition);
   };
 
   return (
-    <section className="flex flex-col lg:p-0 p-12 items-center h-screen w-screen">
+    <section className="flex flex-col lg:p-0 p-12 items-center h-full w-screen lg:h-[900px] lg:pt-44">
       <div className=" ">
         <h1 className="font-bold text-3xl text-jobtext  flex text-center pb-5 -mt-12 font-lato">
           İhtiyacına En Uygun Uzmanı Seç
@@ -70,9 +70,9 @@ const Psychologists = () => {
           </button>
         </div>
       </div>
-      <div className="flex gap-5 items-center text-jobtext font-lato lg:w-[1200px] lg:h-[557px] w-full h-full overflow-x-hidden relative">
+      <div className="flex gap-5 items-center text-jobtext font-lato lg:w-[80%] lg:h-[557px] w-full h-[557px] overflow-x-hidden ">
         <div
-          className="flex items-center"
+          className="flex items-center gap-5"
           style={{ transform: `translateX(${scrollPosition}px)` }}
         >
           {job.data.map((item) => (
@@ -82,7 +82,7 @@ const Psychologists = () => {
         
           <button
             onClick={() => handleScroll("left")}
-            className={`absolute right-16 z-50 hidden h-10 w-10 items-end
+            className={`absolute right-44   hidden h-10 w-10 items-end
             justify-center rounded-full bg-primary text-3xl leading-normal text-white md:flex ${
               scrollPosition===-1200 ?"bg-teal-200":""
             }`}
@@ -97,7 +97,7 @@ const Psychologists = () => {
         
           <button
             onClick={() => handleScroll("right")}
-            className={`absolute left-16 z-50 hidden h-10 w-10 items-end justify-center
+            className={`absolute left-44 hidden h-10 w-10 items-end justify-center
             rounded-full bg-primary text-3xl leading-normal text-white md:flex 
             ${scrollPosition===100?"bg-teal-200":""}
             `}

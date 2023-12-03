@@ -28,7 +28,8 @@ module.exports = {
       },
       fontFamily:{
         brandon:['Inter', "sans-serif"],
-        lato:["Lato", "sans-serif"]
+        lato:["Lato", "sans-serif"],
+        opensans:['Open Sans', "sans-serif"]
       },
       container:{
         screens:{
