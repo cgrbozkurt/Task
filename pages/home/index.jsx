@@ -2,13 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Howtouse from "../howtouse";
+import About from "../about";
+import GetSupport from "../getsupport";
+import Psychologists from "../therapists";
+import Sss from "../faq";
+
 
 const Index = () => {
   return (
     
       <>
-      <React.Fragment>
-        <div className="bg-bgpurple -mt-[147px] top-0 h-screen w-screen flex justify-around px-64 items-center ">
+      <React.Fragment >
+        <div className="bg-bgpurple  top-0 h-screen w-full flex justify-around px-64 items-center ">
           <div className="home-left text-primary w-96 ">
             <h1 className="font-bold text-5xl pb-5">
               Online terapi ile değişimi başlat!
@@ -29,6 +34,10 @@ const Index = () => {
         </div>
       </React.Fragment>
       <Howtouse/>
+      <About/>
+      <GetSupport/>
+      <Psychologists/>
+      <Sss/>
 </>
     
   );

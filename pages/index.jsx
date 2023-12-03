@@ -1,14 +1,10 @@
 import Head from "next/head";
-import Home from "./homea";
-import Howtouse from "./howtouse";
-import About from "./about";
-import GetSupport from "./getsupport";
-import Psychologists from "./therapists";
-import Sss from "./faq";
-import Footer from "@/components/Footer";
+import Home from "./home";
+
 
 export default function Index() {
     
+  
   return (
     <div className="">
       <Head>
@@ -17,11 +13,8 @@ export default function Index() {
      
       </Head>
       <Home/>
-      <About/>
-      <GetSupport/>
-      <Psychologists/>
-      <Sss/>
-      <Footer />
+      
+      
 
       
     </div>
