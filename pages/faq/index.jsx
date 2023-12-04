@@ -12,7 +12,7 @@ const Sss = () => {
   };
 
   return (
-    <div className=" w-[screen] bg-faqbg  xl:h-screen h-full lg:p-20 p-5 pt-16 lg:pt-20 ">
+    <div className=" w-[screen] bg-faqbg  xl:h-screen h-full lg:p-20 p-5 pt-16 lg:pt-20  lg:mb-0 ">
       <div className="lg:mx-[209px] mx-12 items-center sm:items-start lg:pt-20 pt-5 flex flex-col  gap-10   sm:flex-row  ">
         <div className="faq-left sm:w-[35%] w-full flex">
           <div className="sm:w-[270px] w-full  flex flex-col items-center sm:items-start">
@@ -47,7 +47,8 @@ const Sss = () => {
           
         </div>
         <Link href={"https://bulutklinik.com/support"}
-              className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px] rounded-2xl  sm:hidden block " >
+              className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px]  text-white font-bold 
+               rounded-2xl  sm:hidden flex justify-center items-center mt-12" >
               Tümünü Gör
             </Link>
         
