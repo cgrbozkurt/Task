@@ -2,7 +2,7 @@ import { setConfig } from "next/config";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LuMenu } from "react-icons/lu";
-import { svg } from "./svg";
+import { svg } from "../svg";
 import LanguageButton from "./LanguageButton";
 
 

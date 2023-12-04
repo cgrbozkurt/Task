@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { svg } from './svg'
+import { svg } from '../svg'
 import { SlArrowDown } from "react-icons/sl";
 
 
