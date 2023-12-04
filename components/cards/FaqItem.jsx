@@ -15,7 +15,7 @@ const FaqItem = ({ item, active, click }) => {
         className={`w-full h-[55px]   mt-7 ${
           !active
             ? ""
-            : "lg:h-[230px] md:h-[270px]  h-[330px]  lg:pb-5 pb-0 transition-all duration-1000"
+            : "lg:h-[230px]  h-80 lg:pb-5 pb-0 transition-all duration-1000"
         }  transition-all duration-1000`}
       >
         <h1 className="pb-[20px] text-[14px] lg:text-[1rem]  flex justify-between font-bold tracking-wide  ">
