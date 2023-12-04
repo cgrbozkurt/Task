@@ -28,8 +28,8 @@ const Psychologists = () => {
     const amount = 200;
     const newPosition =
       data === "right"
-        ? Math.min(scrollPosition + amount, 0)
-        : Math.max(scrollPosition - amount, -1100); 
+        ? Math.min(scrollPosition + amount, 100)
+        : Math.max(scrollPosition - amount, -1400); 
     setScrollPosition(newPosition);
   };
 
@@ -75,7 +75,7 @@ const Psychologists = () => {
             onClick={() => handleScroll("left")}
             className={`absolute right-10   hidden h-10 w-10 items-end z-10
             justify-center rounded-full bg-primary text-3xl leading-normal text-white md:flex ${
-              scrollPosition===-1200 ?"bg-teal-200":""
+              scrollPosition===-1400 ?"bg-teal-200":""
             }`}
             tabIndex="0"
             aria-label="Next slide"
