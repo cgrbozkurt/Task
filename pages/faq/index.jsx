@@ -12,7 +12,7 @@ const Sss = () => {
   };
 
   return (
-    <div className=" w-[screen] bg-faqbg  xl:h-screen lg:pt-20 ">
+    <div className=" w-[screen] bg-faqbg  xl:h-screen h-full lg:p-20 p-5 pt-16 lg:pt-20 ">
       <div className="lg:mx-[209px] mx-12 items-center sm:items-start lg:pt-20 pt-5 flex flex-col  gap-10   sm:flex-row  ">
         <div className="faq-left sm:w-[35%] w-full flex">
           <div className="sm:w-[270px] w-full  flex flex-col items-center sm:items-start">
@@ -33,8 +33,8 @@ const Sss = () => {
            
           </div>
         </div>
-        <div className="item-contain flex -mt-4 w-full sm:w-[65%]">
-          <div className="flex-col w-full items-center">
+        <div className="item-contain flex -mt-4 w-full h-full lg:w-[65%]">
+          <div className="flex-col w-full h-full items-center">
           {faqapi.map((item, index) => (
             <FaqItem
               key={item.id}

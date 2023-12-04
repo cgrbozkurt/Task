@@ -15,7 +15,7 @@ const About = () => {
           Tarafından resimler <Link className="border-b" href="https://www.freepik.com/">Freepik</Link>
         </p>
       </div>
-      <div className="about-items  w-full grid lg:grid-cols-4 grid-cols-1  gap-5 p-8">
+      <div className="about-items  w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:p-10 gap-5 p-16">
         {aboutdoc.map((item) => (
           <Aboutcard item={item} key={item.id} />
         ))}

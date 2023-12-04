@@ -70,19 +70,10 @@ const Psychologists = () => {
           </button>
         </div>
       </div>
-      <div className="flex gap-5 items-center text-jobtext font-lato lg:w-[80%] lg:h-[557px] w-full h-[557px] overflow-x-hidden ">
-        <div
-          className="flex items-center gap-5"
-          style={{ transform: `translateX(${scrollPosition}px)` }}
-        >
-          {job.data.map((item) => (
-            <JobsCard key={item.id} image={image} item={item} />
-          ))}
-        </div>
-        
-          <button
+      <div className="flex gap-5 items-center text-jobtext font-lato lg:w-[80%] lg:h-[557px] w-full h-[557px] overflow-x-hidden relative ">
+      <button
             onClick={() => handleScroll("left")}
-            className={`absolute right-44   hidden h-10 w-10 items-end
+            className={`absolute right-10   hidden h-10 w-10 items-end z-10
             justify-center rounded-full bg-primary text-3xl leading-normal text-white md:flex ${
               scrollPosition===-1200 ?"bg-teal-200":""
             }`}
@@ -97,8 +88,8 @@ const Psychologists = () => {
         
           <button
             onClick={() => handleScroll("right")}
-            className={`absolute left-44 hidden h-10 w-10 items-end justify-center
-            rounded-full bg-primary text-3xl leading-normal text-white md:flex 
+            className={`absolute left-10 hidden h-10 w-10 items-end justify-center
+            rounded-full bg-primary text-3xl leading-normal text-white md:flex z-10
             ${scrollPosition===100?"bg-teal-200":""}
             `}
             tabIndex="-1"
@@ -109,6 +100,16 @@ const Psychologists = () => {
           >
             ‹
           </button>
+        <div
+          className="flex items-center gap-5"
+          style={{ transform: `translateX(${scrollPosition}px)` }}
+        >
+          {job.data.map((item) => (
+            <JobsCard key={item.id} image={image} item={item} />
+          ))}
+        </div>
+        
+         
         
       </div>
       <Link

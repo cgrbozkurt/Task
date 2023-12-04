@@ -8,25 +8,45 @@ const LanguageButton = () => {
 const [active,SetActive]=useState(false);
 const [language , setLanguage]=useState("TR")
 const a=active===false;
-const handleClick=()=>{
+const handlerClick=(a)=>{
     SetActive(!active);
-    setLanguage()
+    setLanguage(a);
+    
 }
 console.log(language)
 
   return (
-    <div  className={`h-[51px] flex flex-col justify-between w-[94px] rounded-xl  border-[1px] border-black ${!a?"h-full ":""}`}>
-       <button onClick={handleClick} className=" flex  gap-2 justify-center items-center h-[51px]  ">
+    <div className='relative '>
+        <div  className={`h-[51px] flex flex-col justify-between w-[94px] rounded-2xl absolute top-0 bottom-0 right-0 -mt-6
+           border-[1px] border-black transition-all duration-200 ${!a?"h-[102px] ":""}`}>
+       <button onClick={()=>SetActive(!active)} className={`flex  gap-2 justify-center items-center h-[51px] font-bold rounded-t-2xl  ${a?"":"bg-gray-100"}`}>
               {svg[1].item}
               <span>{language}</span>
               <SlArrowDown className='' />
             </button>
-       <button className={`flex  gap-2 justify-center items-center h-[51px] ${a?"hidden":""}`}>
-              {svg[1].item}
-              <span>{language==="TR"&&"EN"||"TR"}</span>
+       <button 
+       onClick={()=>handlerClick("TR")}
+        className={`flex  gap-2 justify-center rounded-b-2xl items-center h-[51px] ${a?"hidden":""}
+        ${a?"":"bg-white"}
+        ${language==="TR"?"hidden":""}`}>
+             
+              <span>TR</span>
               
             </button>
     
+       <button 
+       onClick={()=>handlerClick("EN")}
+
+        className={`flex  gap-2 justify-center rounded-b-2xl items-center h-[51px] ${a?"hidden":""}
+        ${a?"":"bg-white"}
+
+        ${language==="EN"?"hidden":""}`}>
+           
+              <span>EN</span>
+              
+            </button>
+    
+    </div>
     </div>
   )
 }

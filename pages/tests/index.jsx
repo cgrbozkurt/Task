@@ -4,7 +4,7 @@ import SupportItem from './SupportItem'
 
 const GetSupport = () => {
   return (
-    <section className='mt-16 mb-16 flex lg:flex-row flex-col gap-2 justify-center   '>
+    <section className='mt-36 mb-24 flex lg:flex-row flex-col lg:gap-1 gap-5 justify-center   '>
       
     
         <SupportItem>  <Image className='h-16 mb-5 '  src={"/images/benefit-1.webp"} width={62} height={62} />
