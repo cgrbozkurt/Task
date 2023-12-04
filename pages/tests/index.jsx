@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import SupportItem from './SupportItem'
+import SupportItem from '../../components/cards/SupportItem'
 
 const GetSupport = () => {
   return (

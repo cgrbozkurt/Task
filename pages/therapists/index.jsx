@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import JobsCard from "./jobscard";
+import JobsCard from "../../components/cards/jobscard";
 import { psychologists } from "../api/jobs/psychologists";
 import { dietitians } from "../api/jobs/dietitians";
 import { fitnessTrainers } from "../api/jobs/fitnesstrainers";

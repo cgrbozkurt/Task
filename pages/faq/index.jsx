@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import FaqItem from "./FaqItem";
-import { faqapi } from "./faqapi";
+import FaqItem from "../../components/cards/FaqItem";
+import { faqapi } from "../api/faqapi";
 
 const Sss = () => {
   const [selectedItem, setSelectedItem] = useState("");

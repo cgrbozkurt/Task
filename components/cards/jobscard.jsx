@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import SpecialitisCard from "./SpecialitisCard";
-import { jobsimg } from "../api/jobs/jobsimage";
+import { jobsimg } from "../../pages/api/jobs/jobsimage";
 import StarIcon from "./StarIcon";
 import { svg } from "@/components/svg";
 

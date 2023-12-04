@@ -1,5 +1,5 @@
 import React from "react";
-import Aboutcard from "./aboutcard";
+import Aboutcard from "../../components/cards/aboutcard";
 import { aboutdoc } from "../api/aboutdoc";
 import Link from "next/link";
 

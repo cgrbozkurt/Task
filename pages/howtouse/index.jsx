@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { howDoc } from "../api/howdocument";
-import HowtoCard from "./Card";
+import HowtoCard from "../../components/cards/Card";
 import Image from "next/image";
 
 const Howtouse = () => {
