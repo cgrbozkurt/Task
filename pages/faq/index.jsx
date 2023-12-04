@@ -12,7 +12,7 @@ const Sss = () => {
   };
 
   return (
-    <div className=" w-[screen] bg-faqbg  xl:h-screen h-full lg:p-20 p-5 pt-16 lg:pt-20  lg:mb-0 ">
+    <div className=" w-[screen] bg-faqbg  xl:h-screen h-full lg:p-20 p-5 pt-16 lg:pt-20  lg:mb-0   ">
       <div className="lg:mx-[209px] mx-12 items-center sm:items-start lg:pt-20 pt-5 flex flex-col  gap-10   sm:flex-row  ">
         <div className="faq-left sm:w-[35%] w-full flex">
           <div className="sm:w-[270px] w-full  flex flex-col items-center sm:items-start">
@@ -22,7 +22,7 @@ const Sss = () => {
             <p className="text-[15px] my-[30px] sm:text-start text-center tracking-wide">
               BulutKlinik Hakkında sık sorulan sorular
             </p>
-            <div className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px] rounded-2xl lg:flex lg:justify-center items-center font-bold  text-white hidden sm:block ">
+            <div className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px]  rounded-2xl lg:flex lg:justify-center items-center font-bold  text-white hidden sm:block ">
             <Link
               
               href="https://bulutklinik.com/support"

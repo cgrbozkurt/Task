@@ -9,12 +9,11 @@ const FaqItem = ({ item, active, click }) => {
   return (
     <div
       onClick={handleClick}
-      className="flex flex-col w-full items-center  border-b-2 cursor-pointer"
+      className="flex flex-col w-full items-center pb-8 lg:pb-0   border-b-2 cursor-pointer"
     >
       <div
-        className={`w-full h-[55px]   mt-7 ${
-         active
-            ? "lg:h-60 h-80  lg:pb-5 pb-0 transition-all duration-1000"
+        className={`w-full lg:h-[55px] h-[50px]   mt-7 ${ active
+            ? "  !h-72   lg:pb-5 pb-0  transition-all duration-1000"
             : ""
         }  transition-all duration-1000`}
       >
@@ -35,7 +34,7 @@ const FaqItem = ({ item, active, click }) => {
           </div>
         </h1>
         {active && (
-          <p className="block w-full transition-all duration-1000  text-[13px] lg:text-[1rem] ">
+          <p className="block w-full transition-all duration-1000   text-[13px]  lg:text-[1rem] ">
             {item.text}{" "}
           </p>
         )}
