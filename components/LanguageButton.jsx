@@ -18,7 +18,7 @@ console.log(language)
   return (
     <div className='relative '>
         <div  className={`h-[51px] flex flex-col justify-between w-[94px] rounded-2xl absolute top-0 bottom-0 right-0 -mt-6
-           border-[1px] border-black transition-all duration-200 ${!a?"h-24 ":""}`}>
+           border-[1px] border-black transition-all duration-200 ${!a?"h-[104px]":"h-[51px]"}`}>
        <button onClick={()=>SetActive(!active)} className={`flex  gap-2 justify-center items-center h-[51px] font-bold rounded-t-2xl  ${a?"":"bg-gray-100"}`}>
               {svg[1].item}
               <span>{language}</span>
