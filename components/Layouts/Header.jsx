@@ -54,11 +54,11 @@ const Header = () => {
         `}        >
           <div className="list  ">
             <ul className="flex flex-col lg:flex-row text-[1rem] items-center  font-medium shadow-sm pt-2   gap-[10px] font-sans  ">
-              <Link className="" href="/howtouse">NASIL ÇALIŞIR</Link>
-              <Link href="/about">HAKKIMIZDA</Link>
-              <Link href="/therapists">PSİKOLOGLARIMIZ</Link>
-              <Link href="/faq">S.S.S.</Link>
-              <Link href="/tests">
+              <Link onClick={()=>setOpenMenu(false)} className="" href="/howtouse">NASIL ÇALIŞIR</Link>
+              <Link onClick={()=>setOpenMenu(false)} href="/about">HAKKIMIZDA</Link>
+              <Link onClick={()=>setOpenMenu(false)} href="/therapists">PSİKOLOGLARIMIZ</Link>
+              <Link onClick={()=>setOpenMenu(false)} href="/faq">S.S.S.</Link>
+              <Link onClick={()=>setOpenMenu(false)} href="/tests">
                 TESTLER{" "}
                 <span className="text-[.75rem] font-brandon bg-purple-100   px-1   rounded-lg  w-9  ">
                   Yeni
