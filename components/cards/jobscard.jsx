@@ -13,7 +13,7 @@ const JobsCard = ({ item, image }) => {
   };
 
   return (
-    <div className="jobs-card w-[305px] h-[524px] rounded-xl flex flex-col items-center border p-5 overflow-hidden ">
+    <div className="jobs-card lg:w-[305px] w-[280px] h-[524px] rounded-xl flex flex-col items-center border lg:p-5 p-0 overflow-hidden ">
       <div className="jc-top h-[115px] w-[115px] rounded-full border-2 border-jobsborder flex justify-center relative">
         <Link
           className=""

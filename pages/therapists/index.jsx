@@ -52,8 +52,31 @@ const Psychologists = () => {
     setIsDragging(false);
   };
 
+  const handleTouchStart = (e) => {
+    setIsDragging(true);
+    setStartX(e.touches[0].pageX - scrollPosition);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    const newScrollPosition = e.touches[0].pageX - startX;
+    setScrollPosition(
+      Math.max(-1400, Math.min(100, newScrollPosition))
+    );
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
+
   return (
-    <section className="flex flex-col lg:p-0 p-12 items-center h-full w-screen lg:h-[900px] lg:pt-44">
+    <section
+    onMouseMove={handleMouseMove}
+    onMouseUp={handleMouseUp}
+    onTouchMove={handleTouchMove}
+    onTouchEnd={handleTouchEnd}
+    className="flex flex-col lg:p-0 p-12 items-center h-full w-screen lg:h-[900px] lg:pt-44">
       <div className=" ">
         <h1 className="font-bold text-3xl text-jobtext  flex text-center pb-5 -mt-12 font-lato">
           İhtiyacına En Uygun Uzmanı Seç
@@ -91,6 +114,7 @@ const Psychologists = () => {
       </div>
       <div
         onMouseDown={handleMouseDown}
+        onTouchStart={handleTouchStart}
       className="flex gap-5 items-center text-jobtext font-lato lg:w-[80%] lg:h-[557px] w-full h-[557px] overflow-x-hidden relative ">
       <button
             onClick={() => handleScroll("left")}
@@ -122,7 +146,7 @@ const Psychologists = () => {
             ‹
           </button>
         <div
-          className="therapists flex items-center gap-5"
+          className="therapists flex items-center justify-between gap-5"
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           style={{ transform: `translateX(${scrollPosition}px)`, cursor: isDragging ? "grabbing" : "grab", }}
