@@ -51,7 +51,7 @@ const JobsCard = ({ item, image }) => {
       {svg[2].language}
         <span className="nation ">{item.language}</span>
       </div>
-      <div className="specialitis w-[305px] h-[98px] p-2 mb-8 font-semibold  relative flex flex-wrap justify-center gap-1 ">
+      <div className="specialitis w-[305px] h-[130px] p-2 mb-8 font-semibold  relative flex flex-wrap  justify-center gap-1 ">
         {item.specialties.map((product) => (
           <SpecialitisCard product={product} />
         ))}
