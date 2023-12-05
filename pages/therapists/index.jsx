@@ -14,6 +14,8 @@ const Psychologists = () => {
     link: "psikolog",
   });
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
 
   const handleButtonClick = (jobs, title, links) => {
     setJob({
@@ -31,6 +33,23 @@ const Psychologists = () => {
         ? Math.min(scrollPosition + amount, 100)
         : Math.max(scrollPosition - amount, -1400); 
     setScrollPosition(newPosition);
+  };
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollPosition);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const newScrollPosition = e.pageX - startX;
+    setScrollPosition(
+      Math.max(-1400, Math.min(100, newScrollPosition))
+    );
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
   };
 
   return (
@@ -70,7 +89,9 @@ const Psychologists = () => {
           </button>
         </div>
       </div>
-      <div className="flex gap-5 items-center text-jobtext font-lato lg:w-[80%] lg:h-[557px] w-full h-[557px] overflow-x-hidden relative ">
+      <div
+        onMouseDown={handleMouseDown}
+      className="flex gap-5 items-center text-jobtext font-lato lg:w-[80%] lg:h-[557px] w-full h-[557px] overflow-x-hidden relative ">
       <button
             onClick={() => handleScroll("left")}
             className={`absolute right-10   hidden h-10 w-10 items-end z-10
@@ -101,8 +122,10 @@ const Psychologists = () => {
             ‹
           </button>
         <div
-          className="flex items-center gap-5"
-          style={{ transform: `translateX(${scrollPosition}px)` }}
+          className="therapists flex items-center gap-5"
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          style={{ transform: `translateX(${scrollPosition}px)`, cursor: isDragging ? "grabbing" : "grab", }}
         >
           {job.data.map((item) => (
             <JobsCard key={item.id} image={image} item={item} />

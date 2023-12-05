@@ -53,7 +53,7 @@ const Header = () => {
         ${openMenu?"!flex flex-col lg:flex-row  ":""}
         `}        >
           <div className="list  ">
-            <ul className="flex flex-col lg:flex-row text-[1rem] items-center  font-medium shadow-sm pt-2   gap-[10px] font-sans  ">
+            <ul className="flex flex-col lg:flex-row text-[1rem] items-center  font-medium  pt-2   gap-[10px] font-sans  ">
               <Link onClick={()=>setOpenMenu(false)} className="" href="/howtouse">NASIL ÇALIŞIR</Link>
               <Link onClick={()=>setOpenMenu(false)} href="/about">HAKKIMIZDA</Link>
               <Link onClick={()=>setOpenMenu(false)} href="/therapists">PSİKOLOGLARIMIZ</Link>
