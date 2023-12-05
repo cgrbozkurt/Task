@@ -61,7 +61,7 @@ const Psychologists = () => {
     if (!isDragging) return;
     const newScrollPosition = e.touches[0].pageX - startX;
     setScrollPosition(
-      Math.max(-1400, Math.min(100, newScrollPosition))
+      Math.max(-2100, Math.min(100, newScrollPosition))
     );
   };
 
@@ -146,7 +146,7 @@ const Psychologists = () => {
             ‹
           </button>
         <div
-          className="therapists flex items-center justify-between gap-5"
+          className="therapists flex items-center justify-between gap-5 "
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           style={{ transform: `translateX(${scrollPosition}px)`, cursor: isDragging ? "grabbing" : "grab", }}
