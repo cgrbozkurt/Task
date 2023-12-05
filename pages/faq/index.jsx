@@ -47,7 +47,7 @@ const Sss = () => {
           
         </div>
         <Link href={"https://bulutklinik.com/support"}
-              className="bg-faqbtn px-[28px] text-[14px] w-[139px] h-[55px]  text-white font-bold 
+              className="bg-faqbtn px-[28px] text-[14px] w-[159px] h-[55px]  text-white font-bold 
                rounded-2xl  sm:hidden flex justify-center items-center mt-12" >
               Tümünü Gör
             </Link>
